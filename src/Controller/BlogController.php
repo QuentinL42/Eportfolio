@@ -15,4 +15,9 @@ final class BlogController extends AbstractController
             'controller_name' => 'BlogController',
         ]);
     }
+    #[Route('/blog/home', name: 'app_blog_home')]
+    public function home(): Response
+    {
+        return $this->render('blog/home.html.twig');
+    }
 }
