@@ -1,8 +1,42 @@
-{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mon site{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css">
+    {% block stylesheets %}{% endblock %}
+  </head>
+  <body>
+    <!-- ✅ Entête -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MonSite</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link" href="/about">À propos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-{% block title %}À propos{% endblock %}
+    <!-- ✅ Contenu principal -->
+    <main class="container mt-4">
+      {% block body %}{% endblock %}
+    </main>
 
-{% block body %}
-    <h1>À propos de moi</h1>
-    <p>Bienvenue sur mon e‑portfolio !</p>
-{% endblock %}
+    <!-- ✅ Pied de page -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p>&copy; 2025 - MonSite. Tous droits réservés.</p>
+    </footer>
+
+    {% block javascripts %}
+      {% block importmap %}
+        {{ importmap('app') }}
+      {% endblock %}
+    {% endblock %}
+  </body>
+</html>
