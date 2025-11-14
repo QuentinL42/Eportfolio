@@ -20,4 +20,9 @@ final class BlogController extends AbstractController
     {
         return $this->render('blog/home.html.twig');
     }
+    #[Route('/blog/information', name: 'app_blog_information')]
+    public function info(): Response
+    {
+        return $this->render('blog/information.html.twig');
+    }
 }
