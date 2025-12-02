@@ -25,4 +25,14 @@ final class BlogController extends AbstractController
     {
         return $this->render('blog/information.html.twig');
     }
+    #[Route('/blog/CV', name: 'app_blog_CV')]
+    public function CV(): Response
+    {
+        return $this->render('blog/CV.html.twig');
+    }
+    #[Route('/blog/Eportfolio', name: 'app_blog_EP')]
+    public function EP(): Response
+    {
+        return $this->render('blog/Eportfolio.html.twig');
+    }
 }
