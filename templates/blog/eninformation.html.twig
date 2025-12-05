@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css">
+    {% block stylesheets %}{% endblock %}
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://127.0.0.1:8000/blog#">MySite</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/enhome">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/eninformation">Learn More</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/enCV">Resume</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/enEportfolio">E-portfolio</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="container mt-4">
+      {% block body %}
+
+      <section>
+        <h1>Welcome to My Website</h1>
+        <p>This site presents my background, hobbies, and career aspirations in cybersecurity.</p>
+      </section>
+     
+      <section>
+        <h2>About Me</h2>
+        <ul>
+          <li>I am 19 years old and currently living in Roanne.</li>
+          <li>I am looking for a job to gain professional experience.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>My Hobbies</h2>
+        <ul>
+          <li>I enjoy hiking</li>
+          <img src="{{ asset('images/rando.jpg') }}" alt="Hiking photo" width="400">
+          <li>I like weight training</li>
+          <img src="{{ asset('images/muscu.jpg') }}" alt="Weight training photo" width="400">
+          <li>I spend time trying to understand the world around us</li>
+          <img src="{{ asset('images/sol.jpg') }}" alt="Thinking photo" width="400">
+        </ul>
+      </section>
+      
+      <section>
+        <h2>My Goals</h2>
+        <ul>
+          <li>Deepen my knowledge in computer science</li>
+          <li>Work in the field of cybersecurity</li>
+          <li>Achieve my dream job</li>
+        </ul>
+      </section>
+
+      {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p>&copy; 2025 - MySite. All rights reserved.</p>
+    </footer>
+
+    {% block javascripts %}
+      {% block importmap %}
+        {{ importmap('app') }}
+      {% endblock %}
+    {% endblock %}
+  </body>
+</html>
