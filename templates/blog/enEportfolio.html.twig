@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <title>{% block title %}My Website{% endblock %}</title>
+    <title>{% block title %}Mon site{% endblock %}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css">
     {% block stylesheets %}{% endblock %}
   </head>
@@ -18,54 +18,97 @@
               <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/eninformation">Learn More</a></li>
               <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/enCV">Resume</a></li>
               <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/enEportfolio">E-portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/Eportfolio">FR</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Main content -->
+    <!-- Contenu principal -->
     <main class="container mt-4">
       {% block body %}
+      <div class="container my-5">
 
-      <section>
-        <h1>/h1>
-        <p></p>
-      </section>
-     
-      <section>
-        <h2></h2>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2></h2>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2></h2>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
+    <h1 class="text-center mb-4">My E-Portfolio</h1>
+    <p class="lead text-center mb-5">Here is my E-portfolio</p>
 
+    <section class="mb-5">
+        <h2>Description</h2>
+        <p>Here are the critical skills acquired during my journey.</p>
+    </section>
+
+    <section class="mb-5">
+        <h2>Critical skills</h2>
+
+        <!-- Bloc compétence critique 1 -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title">AC11.02 Understand the architecture and foundations of digital systems, the principles of information coding, communications and the Internet</h3>
+                <p class="card-text">Description of the critical skill 1.</p>
+                
+                <!-- Ressenti -->
+                <div class="mt-3 mb-3">
+                    <h5>My feelings and positioning</h5>
+                    <p>Your feelings and positioning for this skill.</p>
+                </div>
+
+                <!-- Boutons -->
+                <a href="/analyse-reflective-1" class="btn btn-primary me-2">Reflective analysis</a>
+                <a href="/document-preuve-1" class="btn btn-secondary">Proof document</a>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title">AC11.03 Configurer les fonctions de base du réseau local</h3>
+                <p class="card-text">Description of the critical skill 2.</p>
+
+                <div class="mt-3 mb-3">
+                    <h5>My feelings and positioning</h5>
+                    <p>Your feelings and positioning for this skill.</p>
+                </div>
+
+                <a href="https://docs.google.com/document/d/1SZ5QvreX5pm-AOMe_prTAdwuNdHRKFbEwejGGrYuQMg/edit?tab=t.0#heading=h.79zyscas4ezb" class="btn btn-primary me-2">Reflective analysis</a>
+                <a href="https://docs.google.com/document/d/1jHtHzXmQbx2Qs93ShMF_FLv6rranZcjWeVg9r0Ark2Q/edit?tab=t.0" class="btn btn-secondary">Proof document</a>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title">AC11.05 Know how to identify local network malfunctions</h3>
+                <p class="card-text">Description of the critical skill 3.</p>
+
+                <div class="mt-3 mb-3">
+                    <h5>My feelings and positioning</h5>
+                    <p>Your feelings and positioning for this skill.</p>
+                </div>
+
+                <a href="/analyse-reflective-2" class="btn btn-primary me-2">Reflective analysis</a>
+                <a href="/document-preuve-2" class="btn btn-secondary">Proof document</a>
+            </div>
+        </div>
+        
+        <div style="height: 30px;"></div>
+
+
+    <section>
+      <h2>My feelings and positioning</h2>
+        <p>The BUT RT suits me perfectly because it corresponds to my professional aspirations and my interest in IT development.</p>
+      </section>
+  </section>
+    <div style="height: 30px;"></div>
+  </div>
       {% endblock %}
     </main>
 
-    <!-- Footer -->
+    <!-- Pied de page -->
     <footer class="bg-dark text-white text-center py-3 mt-4">
-      <p>&copy; 2025 - MySite. All rights reserved.</p>
+      <p>&copy; 2026 - MonSite. Tous droits réservés.</p>
     </footer>
 
     {% block javascripts %}

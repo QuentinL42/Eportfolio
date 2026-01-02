@@ -27,43 +27,87 @@
     <!-- Contenu principal -->
     <main class="container mt-4">
       {% block body %}
+      <div class="container my-5">
 
-      <section>
-      <h1></h1>
-      <p></p>
-      </section>
-     
-      <section>
-      <h2></h2>
-      <ul>
-      <li></li>
-      <li></li>
-      </ul>
-      </section>
-      
-      <section>
-      <h2></h2>
-      <ul>
-      <li></li>
-      <li></li>
-      </ul>
-      </section>
-      
-      <section>
-      <h2></h2>
-      <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      </ul>
-      </section>
+    <h1 class="text-center mb-4">Mon E-Portfolio</h1>
+    <p class="lead text-center mb-5">Voici mon E-portfolio</p>
 
+    <section class="mb-5">
+        <h2>Description</h2>
+        <p>Voici les compétences critiques acquises durant mon parcours.</p>
+    </section>
+
+    <section class="mb-5">
+        <h2>Compétences critiques</h2>
+
+        <!-- Bloc compétence critique 1 -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title">AC11.02 Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet</h3>
+                <p class="card-text">Description de la compétence critique 1.</p>
+                
+                <!-- Ressenti -->
+                <div class="mt-3 mb-3">
+                    <h5>Mon ressenti et positionnement</h5>
+                    <p>Votre ressenti et positionnement pour cette compétence.</p>
+                </div>
+
+                <!-- Boutons -->
+                <a href="/analyse-reflective-1" class="btn btn-primary me-2">Analyse réflexive</a>
+                <a href="/document-preuve-1" class="btn btn-secondary">Document de preuve</a>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title">AC11.03 Configurer les fonctions de base du réseau local</h3>
+                <p class="card-text">Description de la compétence critique 2.</p>
+
+                <div class="mt-3 mb-3">
+                    <h5>Mon ressenti et positionnement</h5>
+                    <p>Votre ressenti et positionnement pour cette compétence.</p>
+                </div>
+
+                <a href="/analyse-reflective-2" class="btn btn-primary me-2">Analyse réflexive</a>
+                <a href="/document-preuve-2" class="btn btn-secondary">Document de preuve</a>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title">AC11.05 Savoir identifier les dysfonctionnements du réseau local</h3>
+                <p class="card-text">Description de la compétence critique 2.</p>
+
+                <div class="mt-3 mb-3">
+                    <h5>Mon ressenti et positionnement</h5>
+                    <p>Votre ressenti et positionnement pour cette compétence.</p>
+                </div>
+
+                <a href="/analyse-reflective-2" class="btn btn-primary me-2">Analyse réflexive</a>
+                <a href="/document-preuve-2" class="btn btn-secondary">Document de preuve</a>
+            </div>
+        </div>
+        
+        <div style="height: 30px;"></div>
+
+
+    <section>
+      <h2>Mon ressenti et mon positionnement</h2>
+        <p>Le BUT RT me convient parfaitement car il correspond à mes aspirations professionnelles et à mon intérêt pour le développement informatique.</p>
+      </section>
+  </section>
+    <div style="height: 30px;"></div>
+  </div>
       {% endblock %}
     </main>
 
     <!-- Pied de page -->
     <footer class="bg-dark text-white text-center py-3 mt-4">
-      <p>&copy; 2025 - MonSite. Tous droits réservés.</p>
+      <p>&copy; 2026 - MonSite. Tous droits réservés.</p>
     </footer>
 
     {% block javascripts %}
