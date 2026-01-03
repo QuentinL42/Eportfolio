@@ -8,6 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class BlogController extends AbstractController
 {
+    // Default route
     #[Route('/blog', name: 'app_blog')]
     public function index(): Response
     {
@@ -15,44 +16,48 @@ final class BlogController extends AbstractController
             'controller_name' => 'BlogController',
         ]);
     }
-    #[Route('/blog/home', name: 'app_blog_home')]
+
+    // French routes
+    #[Route('/blog/fr/home', name: 'app_blog_home')]
     public function home(): Response
     {
-        return $this->render('blog/home.html.twig');
+        return $this->render('blog/fr/home.html.twig');
     }
-    #[Route('/blog/information', name: 'app_blog_information')]
+    #[Route('/blog/fr/information', name: 'app_blog_information')]
     public function info(): Response
     {
-        return $this->render('blog/information.html.twig');
+        return $this->render('blog/fr/information.html.twig');
     }
-    #[Route('/blog/CV', name: 'app_blog_CV')]
+    #[Route('/blog/fr/CV', name: 'app_blog_CV')]
     public function CV(): Response
     {
-        return $this->render('blog/CV.html.twig');
+        return $this->render('blog/fr/CV.html.twig');
     }
-    #[Route('/blog/Eportfolio', name: 'app_blog_EP')]
+    #[Route('/blog/fr/Eportfolio', name: 'app_blog_EP')]
     public function EP(): Response
     {
-        return $this->render('blog/Eportfolio.html.twig');
+        return $this->render('blog/fr/Eportfolio.html.twig');
     }
-    #[Route('/blog/enhome', name: 'app_blog_enhome')]
+    
+    // English routes
+    #[Route('/blog/en/enhome', name: 'app_blog_enhome')]
     public function enhome(): Response
     {
-        return $this->render('blog/enhome.html.twig');
+        return $this->render('blog/en/enhome.html.twig');
     }
-    #[Route('/blog/eninformation', name: 'app_blog_eninformation')]
+    #[Route('/blog/en/eninformation', name: 'app_blog_eninformation')]
     public function eninfo(): Response
     {
-        return $this->render('blog/eninformation.html.twig');
+        return $this->render('blog/en/eninformation.html.twig');
     }
-    #[Route('/blog/enCV', name: 'app_blog_enCV')]
+    #[Route('/blog/en/enCV', name: 'app_blog_enCV')]
     public function enCV(): Response
     {
-        return $this->render('blog/enCV.html.twig');
+        return $this->render('blog/en/enCV.html.twig');
     }
-    #[Route('/blog/enEportfolio', name: 'app_blog_enEP')]
+    #[Route('/blog/en/enEportfolio', name: 'app_blog_enEP')]
     public function enEP(): Response
     {
-        return $this->render('blog/enEportfolio.html.twig');
+        return $this->render('blog/en/enEportfolio.html.twig');
     }
 }

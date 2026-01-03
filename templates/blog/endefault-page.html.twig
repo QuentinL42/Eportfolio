@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>{% block title %}My Website{% endblock %}</title>
+    <title>{% block title %}My Site{% endblock %}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css">
     {% block stylesheets %}{% endblock %}
   </head>
@@ -14,10 +14,11 @@
           <a class="navbar-brand" href="http://127.0.0.1:8000/blog#">MySite</a>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto">
-              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/enhome">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/eninformation">Learn More</a></li>
-              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/enCV">Resume</a></li>
-              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/enEportfolio">E-portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/en/enhome">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/en/eninformation">Learn More</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/en/enCV">Resume</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/en/enEportfolio">E-portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog/fr/home">FR</a></li>
             </ul>
           </div>
         </div>
@@ -29,35 +30,33 @@
       {% block body %}
       
       <section>
-        <h1>My Career Goal</h1>
-        <p>I would like to become a Pentester</p>
+        <h1></h1>
+        <p></p>
       </section>
      
       <section>
-        <h2>Education</h2>
+        <h2></h2>
         <ul>
-           <li>General Scientific Baccalaureate</li>
-           <li>BUT Networks and Telecommunications</li>
-           <li>Certifications (MOOC ANSSI, ...)</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2></h2>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2></h2>
+         <ul>
+           <li></li>
+           <li></li>
+           <li></li>
           </ul>
-      </section>
-      
-      <section>
-        <h2>Professional Experience</h2>
-        <ul>
-          <li>Internship in IT Security</li>
-          <li>Hacking Lab Project</li>
-          <li>Penetration Testing Project</li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>Creation and configuration of VLANs</li>
-          <li>Development of simple websites</li>
-          <li>Programming (Python, Bash...)</li>
-        </ul>
       </section>
 
       {% endblock %}
